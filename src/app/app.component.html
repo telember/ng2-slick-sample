@@ -1,13 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    <button type="button" class="btn btn-primary" (click) = "actionAlert()">Alert</button>
-  </h1>
+<div class="container">
+  <slick-carousel class="carousel" [option]="slideOption()">
+    <div slick-carousel-item *ngFor="let slide of slides" class="slide" style="text-align:center">{{slide.caption}}</div>
+
+  </slick-carousel>
 </div>
-<slick-carousel class="carousel">
-  <div slick-carousel-item *ngFor="let slide of slides" class="slide">{{slide.caption}}</div>
-</slick-carousel>
-
-
-
-

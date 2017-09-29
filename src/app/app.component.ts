@@ -16,26 +16,36 @@ export class AppComponent {
     { caption: "Meddle" }
   ];
 
-  constructor(){
-  
+  constructor() {
   }
-  // actionAlert(){
-  //   console.log("cycle");
-  //   $("#carouselExampleIndicators").carousel("cycle");
-  // }
 
-
-  // ngAfterViewInit(){
-  //   console.log("hello");
-  //   $('.slick-track').slick({
-  //     infinite: true,
-  //     slidesToShow: 3,
-  //     slidesToScroll: 3
-  //   })
-  // }
-
-  // ngAfterViewChecked() {
-  //   //let self = this;
-  //   //UIkit.alert(".nom").close();
-  // }
+  slideOption() {
+    return {
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ],
+      autoplay: true,
+      autoplaySpeed: 2000
+    }
+  }
 }
