@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-declare const $: any;
 
 @Component({
   selector: 'app-root',
@@ -16,6 +15,10 @@ export class AppComponent {
     { caption: "Atom Heart Mother" },
     { caption: "Meddle" }
   ];
+
+  constructor(){
+  
+  }
   // actionAlert(){
   //   console.log("cycle");
   //   $("#carouselExampleIndicators").carousel("cycle");
