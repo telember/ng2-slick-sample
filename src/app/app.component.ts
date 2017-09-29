@@ -8,25 +8,31 @@ declare const $: any;
 })
 export class AppComponent {
   title = 'app';
+  slides = [
+    { caption: "The Piper at the Gates of Dawn" },
+    { caption: "A Saucerful of Secrets" },
+    { caption: "Music from the Film More" },
+    { caption: "Ummagumma" },
+    { caption: "Atom Heart Mother" },
+    { caption: "Meddle" }
+  ];
+  // actionAlert(){
+  //   console.log("cycle");
+  //   $("#carouselExampleIndicators").carousel("cycle");
+  // }
 
-  actionAlert(){
-    console.log("cycle");
-    $("#carouselExampleIndicators").carousel("cycle");
-  }
 
+  // ngAfterViewInit(){
+  //   console.log("hello");
+  //   $('.slick-track').slick({
+  //     infinite: true,
+  //     slidesToShow: 3,
+  //     slidesToScroll: 3
+  //   })
+  // }
 
-  ngAfterViewInit(){
-    console.log("hello");
-    $('.your-class').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
-    })
-  }
-
-  ngAfterViewChecked() {
-    //let self = this;
-    //UIkit.alert(".nom").close();
-  }
+  // ngAfterViewChecked() {
+  //   //let self = this;
+  //   //UIkit.alert(".nom").close();
+  // }
 }
