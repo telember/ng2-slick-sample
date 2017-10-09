@@ -1,5 +1,5 @@
 # Angular2 with slick 
-
+[Slick](https://github.com/kenwheeler/slick) is carousel slide jquery plugin
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3.
 
 ## Development server
